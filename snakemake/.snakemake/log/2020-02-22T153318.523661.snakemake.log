@@ -1,0 +1,23 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	SPAdes_assembly
+	1	SRA_Import
+	1	SRA_to_fastq
+	1	all
+	1	assembly_stats
+	1	fastq_qc
+	1	import_reference_genome
+	7
+
+[Sat Feb 22 15:33:18 2020]
+rule SRA_Import:
+    output: /scratch/reproducibility-tutorial/experiment/sra_files/SRR8245081/SRR8245081.sra
+    jobid: 1
+    wildcards: accession=SRR8245081
+
+Terminating processes on user request, this might take some time.
+Cancelling snakemake on user request.
